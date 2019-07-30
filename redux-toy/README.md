@@ -1,6 +1,8 @@
 # Redux toy app
 
-Redux is a one-way flow of data. Actions are dispatched to the reducer, which returns a new state. The state is made available to the app components by the store.
+Redux is way of handling data globally in your app, and provides a safe way design state-based apps. Redux enforces a one-way flow of data (TODO more on that).
+
+Actions are dispatched to the reducer, which returns a new state. The state is made available to the app components by the store.
 
 ## To run this app
 
@@ -166,4 +168,8 @@ export default connect(mapStateToProps, mapDispatchToProps)(App)
 
 # Further reading
 
-https://medium.com/@holtkam2/react-redux-understanding-components-containers-actions-and-reducers-a2f9287bfb92
+Some of the jargon
+> https://medium.com/@holtkam2/react-redux-understanding-components-containers-actions-and-reducers-a2f9287bfb92
+
+For a comparison of React's Context API and Redux, see
+> https://frontarm.com/james-k-nelson/when-context-replaces-redux/
