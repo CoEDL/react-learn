@@ -11,19 +11,9 @@ class App extends Component {
   incrementHandler = () => {
       this.props.incrementSomething()
   }
-
   render = () => {
     return (
-    <div>
-      <section>
-        <button onClick={this.nameHandler}>change</button>
-        {this.props.name}
-      </section>
-      <section>
-        <button onClick={this.incrementHandler}>change</button>
-        {this.props.incrementingThing}
-      </section>
-    </div>
+      <div>{this.props.name}</div>
     )
   }
 }

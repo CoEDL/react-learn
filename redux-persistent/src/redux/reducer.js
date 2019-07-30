@@ -1,5 +1,5 @@
 const initialState = {
-  name: 'initial value',
+  name: 'ben',
   incrementingThing: 0
 }
 
