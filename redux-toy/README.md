@@ -1,17 +1,22 @@
 # Redux toy app
 
-Install redux and react-redux
+Redux is a one-way flow of data. Actions are dispatched to the reducer, which returns a new state. The state is made available to the app components by the store.
 
-Redux is a one-way flow of data. Actions are dispatched to the reducer, which returns a new state. The state is made available to the app components by the store. 
+## To run this app
+
+1. Download or `git clone` the parent `react-learn` repository.
+2. Get into this `redux-toy` directory
+3. Run `yarn start`
 
 
+## How to build this into a new app.
 Make three files
 src/redux/actions.js
 src/redux/reducer.js
 src/redux/store.js
 
 
-In actions.js, export the actions that the reducer will respond to. They have an action.type and optional other properties, ag action.payload or action.id 
+In actions.js, export the actions that the reducer will respond to. They have an action.type and optional other properties, ag action.payload or action.id
 
 ```
 export const changeName = name => {
@@ -20,16 +25,16 @@ export const changeName = name => {
 ```
 
 
-The reducer takes the current state, and depending on the action.type that it receives, will return a new state. 
+The reducer takes the current state, and depending on the action.type that it receives, will return a new state.
 
 ```
 const initialState={name:'bar'}
 const rootReducer = (state = initialState, action) => {
 	switch(action.type) {
-		case 'CHANGE_NAME': 
+		case 'CHANGE_NAME':
 			const newValue = action.name
 			return {...state, name: newValue}
-		default: 
+		default:
 			return state
 	}
 }
@@ -48,7 +53,7 @@ export default store
 ```
 
 
-In the app index.js, wrap the App component in a Provider, and pass in the store. 
+In the app index.js, wrap the App component in a Provider, and pass in the store.
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -82,7 +87,7 @@ export default connect(mapStateToProps)(App)
 ```
 
 
-To dispatch an action from your component to update redux state, use a similar technique, mapDispatchToProps. Import the action from actinos.js, then add mapDispatchToProps into the connect() and then 
+To dispatch an action from your component to update redux state, use a similar technique, mapDispatchToProps. Import the action from actinos.js, then add mapDispatchToProps into the connect() and then
 
 ```
 import React, { Component } from 'react';
