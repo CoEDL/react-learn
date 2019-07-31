@@ -2,7 +2,7 @@
 
 Somewhere to collect resources and toy repos that demonstrate concepts and techniques for React.
 
-[Start in with the Wiki.](https://github.com/CoEDL/react-learn/wiki)
+[Start with the Wiki.](https://github.com/CoEDL/react-learn/wiki)
 
 ## passing data between components
 
