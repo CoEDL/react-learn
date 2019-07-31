@@ -2,6 +2,12 @@
 
 Somewhere to collect resources and toy repos that demonstrate concepts and techniques for React.
 
+[Start in with the Wiki.](https://github.com/CoEDL/react-learn/wiki)
+
+## passing data between components
+
+[coming soon]
+
 ## redux-toy
 
 This demonstrates how to put the bits together to use Redux with React. Redux is a way of handling "state" centrally.
