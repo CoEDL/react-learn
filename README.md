@@ -4,9 +4,9 @@ Somewhere to collect resources and toy repos that demonstrate concepts and techn
 
 [Start with the Wiki.](https://github.com/CoEDL/react-learn/wiki)
 
-## passing data between components
+## react-props
 
-[coming soon]
+This is the result of the first workshops from the wiki, demonstrating how to write a custom component and passing props around.
 
 ## redux-toy
 
