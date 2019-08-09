@@ -1,6 +1,17 @@
 import React from 'react'
 
-const Name = props => {
-  return <p>{props.firstName}</p>
+class Name extends React.Component {
+
+  state = {
+    name: "hi"
+  }
+
+  componentDidMount() {
+    this.setState({ name: "hi " + this.props.firstName })
+  }
+
+  render() {
+    return <p>{this.state.name}</p>
+  }
 }
 export default Name
