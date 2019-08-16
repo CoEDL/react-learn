@@ -8,6 +8,10 @@ Somewhere to collect resources and toy repos that demonstrate concepts and techn
 
 This is the result of the first workshops from the wiki, demonstrating how to write a custom component and passing props around.
 
+## react-axios
+
+How to read data from an API, and show some results on a page.
+
 ## redux-toy
 
 This demonstrates how to put the bits together to use Redux with React. Redux is a way of handling "state" centrally.
