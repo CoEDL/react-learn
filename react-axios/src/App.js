@@ -14,8 +14,7 @@ class App extends React.Component {
         // APIs give response data back in different formats,
         // check what the format is by looking at the console log
         console.log(response)
-        const items = response.data
-        this.setState({ items: items })
+        this.setState({ items: response.data })
       })
   }
 
