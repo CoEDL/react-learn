@@ -5,7 +5,7 @@ class App extends React.Component {
 
   state = {
     items: [],
-    key: '8odl5mlnqm4pr15a',
+    key: 'YOUR_KEY_HERE',
     zone: 'book',
     query: 'sharks'
   }
@@ -14,7 +14,9 @@ class App extends React.Component {
     // compile our query to suit the API
     // docs: https://help.nla.gov.au/trove/building-with-trove/api-version-2-technical-guide#anchor-1
     const url = '/result?key=' + this.state.key + '&zone=' + this.state.zone + '&q=' + this.state.query
+    // const url = '/result?key=YOUR_KEY_HERE&zone=book&q=shark'
 
+    console.log(url)
     // this is an alternative way of joining strings and variables, aka template strings or template literals
     // const url = `/result?key=${this.state.key}&zone=${this.state.zone}&q=${this.state.query}`
 
@@ -35,7 +37,7 @@ class App extends React.Component {
           // map will loop over item in items
           this.state.items.map(item => {
             return (
-              <li className="item" key={item.id}>
+              <li className="item" key={item.title}>
                   {item.title}
               </li>
             )
